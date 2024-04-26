@@ -59,7 +59,7 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Paris");
 
-function foreCast(city) {
+function getForecast(city) {
   let apiKey = "06b31a3a8eeefba9a7ed684o4f85t2b3";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
   axios(apiUrl).then(displayForecast);
